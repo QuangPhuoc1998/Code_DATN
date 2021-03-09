@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"gy_30\startup_stm32f103xb.o"
+"gy_30\main.o"
+"gy_30\stm32f1xx_it.o"
+"gy_30\stm32f1xx_hal_msp.o"
+"gy_30\stm32f1xx_hal_gpio_ex.o"
+"gy_30\stm32f1xx_hal_i2c.o"
+"gy_30\stm32f1xx_hal.o"
+"gy_30\stm32f1xx_hal_rcc.o"
+"gy_30\stm32f1xx_hal_rcc_ex.o"
+"gy_30\stm32f1xx_hal_gpio.o"
+"gy_30\stm32f1xx_hal_dma.o"
+"gy_30\stm32f1xx_hal_cortex.o"
+"gy_30\stm32f1xx_hal_pwr.o"
+"gy_30\stm32f1xx_hal_flash.o"
+"gy_30\stm32f1xx_hal_flash_ex.o"
+"gy_30\stm32f1xx_hal_exti.o"
+"gy_30\stm32f1xx_hal_tim.o"
+"gy_30\stm32f1xx_hal_tim_ex.o"
+"gy_30\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "GY_30\GY_30.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GY_30.map" -o GY_30\GY_30.axf

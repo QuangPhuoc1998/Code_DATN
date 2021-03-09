@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"lm75\startup_stm32f103xb.o"
+"lm75\main.o"
+"lm75\stm32f1xx_it.o"
+"lm75\stm32f1xx_hal_msp.o"
+"lm75\stm32f1xx_hal_gpio_ex.o"
+"lm75\stm32f1xx_hal_i2c.o"
+"lm75\stm32f1xx_hal.o"
+"lm75\stm32f1xx_hal_rcc.o"
+"lm75\stm32f1xx_hal_rcc_ex.o"
+"lm75\stm32f1xx_hal_gpio.o"
+"lm75\stm32f1xx_hal_dma.o"
+"lm75\stm32f1xx_hal_cortex.o"
+"lm75\stm32f1xx_hal_pwr.o"
+"lm75\stm32f1xx_hal_flash.o"
+"lm75\stm32f1xx_hal_flash_ex.o"
+"lm75\stm32f1xx_hal_exti.o"
+"lm75\stm32f1xx_hal_tim.o"
+"lm75\stm32f1xx_hal_tim_ex.o"
+"lm75\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "LM75\LM75.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LM75.map" -o LM75\LM75.axf

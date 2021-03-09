@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>../Image/chart.png</file>
+        <file>../Image/sensor.png</file>
+        <file>../Image/setting.png</file>
+        <file>../Image/time.png</file>
+        <file>../Image/back.png</file>
+        <file>../Image/wifi_off.png</file>
+        <file>../Image/wifi_on.png</file>
+        <file>../Image/close.png</file>
+        <file>Node_1.qml</file>
+        <file>Node_2.qml</file>
+        <file>../Image/arrow.svg</file>
+        <file>../Image/compass.svg</file>
+        <file>arrow.svg</file>
+        <file>compass.svg</file>
+        <file>Node_3.qml</file>
+        <file>Node_4.qml</file>
+    </qresource>
+</RCC>

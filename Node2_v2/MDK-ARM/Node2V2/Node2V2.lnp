@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"node2v2\startup_stm32f103xb.o"
+"node2v2\main.o"
+"node2v2\stm32f1xx_it.o"
+"node2v2\stm32f1xx_hal_msp.o"
+"node2v2\stm32f1xx_hal_gpio_ex.o"
+"node2v2\stm32f1xx_hal_i2c.o"
+"node2v2\stm32f1xx_hal.o"
+"node2v2\stm32f1xx_hal_rcc.o"
+"node2v2\stm32f1xx_hal_rcc_ex.o"
+"node2v2\stm32f1xx_hal_gpio.o"
+"node2v2\stm32f1xx_hal_dma.o"
+"node2v2\stm32f1xx_hal_cortex.o"
+"node2v2\stm32f1xx_hal_pwr.o"
+"node2v2\stm32f1xx_hal_flash.o"
+"node2v2\stm32f1xx_hal_flash_ex.o"
+"node2v2\stm32f1xx_hal_exti.o"
+"node2v2\stm32f1xx_hal_tim.o"
+"node2v2\stm32f1xx_hal_tim_ex.o"
+"node2v2\stm32f1xx_hal_uart.o"
+"node2v2\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Node2V2\Node2V2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Node2V2.map" -o Node2V2\Node2V2.axf

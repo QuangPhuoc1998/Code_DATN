@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"hs1101\startup_stm32f103xb.o"
+"hs1101\main.o"
+"hs1101\stm32f1xx_it.o"
+"hs1101\stm32f1xx_hal_msp.o"
+"hs1101\stm32f1xx_hal_gpio_ex.o"
+"hs1101\stm32f1xx_hal_tim.o"
+"hs1101\stm32f1xx_hal_tim_ex.o"
+"hs1101\stm32f1xx_hal.o"
+"hs1101\stm32f1xx_hal_rcc.o"
+"hs1101\stm32f1xx_hal_rcc_ex.o"
+"hs1101\stm32f1xx_hal_gpio.o"
+"hs1101\stm32f1xx_hal_dma.o"
+"hs1101\stm32f1xx_hal_cortex.o"
+"hs1101\stm32f1xx_hal_pwr.o"
+"hs1101\stm32f1xx_hal_flash.o"
+"hs1101\stm32f1xx_hal_flash_ex.o"
+"hs1101\stm32f1xx_hal_exti.o"
+"hs1101\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "HS1101\HS1101.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HS1101.map" -o HS1101\HS1101.axf

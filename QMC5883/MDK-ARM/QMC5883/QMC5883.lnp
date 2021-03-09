@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"qmc5883\startup_stm32f103xb.o"
+"qmc5883\main.o"
+"qmc5883\stm32f1xx_it.o"
+"qmc5883\stm32f1xx_hal_msp.o"
+"qmc5883\stm32f1xx_hal_gpio_ex.o"
+"qmc5883\stm32f1xx_hal_i2c.o"
+"qmc5883\stm32f1xx_hal.o"
+"qmc5883\stm32f1xx_hal_rcc.o"
+"qmc5883\stm32f1xx_hal_rcc_ex.o"
+"qmc5883\stm32f1xx_hal_gpio.o"
+"qmc5883\stm32f1xx_hal_dma.o"
+"qmc5883\stm32f1xx_hal_cortex.o"
+"qmc5883\stm32f1xx_hal_pwr.o"
+"qmc5883\stm32f1xx_hal_flash.o"
+"qmc5883\stm32f1xx_hal_flash_ex.o"
+"qmc5883\stm32f1xx_hal_exti.o"
+"qmc5883\stm32f1xx_hal_tim.o"
+"qmc5883\stm32f1xx_hal_tim_ex.o"
+"qmc5883\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "QMC5883\QMC5883.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "QMC5883.map" -o QMC5883\QMC5883.axf
